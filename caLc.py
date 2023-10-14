@@ -6,6 +6,7 @@ def allPathsSourceTarget(graph):
     def dfs(node, path):
         if node == target:
             targets.append(path)
+            print((path)," | ",len(path))
             return
 
         for neighbor in graph[node]:
